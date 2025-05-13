@@ -46,7 +46,7 @@ class Program
 
         Console.WriteLine($"Using xytan={xytan:F6}, yztan={yztan:F6}, zxtan={zxtan:F6}");
 
-        foreach (var f in files.Where(x => x.ToLower().EndsWith(".stl") && !x.ToLower().EndsWith("-unskewed.stl")).ToList())
+        foreach (var f in files.Where(x => x.ToLower().EndsWith(".stl") && !x.ToLower().EndsWith("-unskewed.stl")))
         {
             var stlFile = StlFile.Load(f);
 
